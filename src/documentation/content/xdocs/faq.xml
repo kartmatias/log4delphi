@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+    <header>
+        <title>Frequently Asked Questions about Log4Delphi</title>
+    </header>
+    <body>
+        <section>
+            <title>Questions</title>
+			<section>				
+				<title>Getting Started and Building Log4Delphi</title>
+				<section>
+					<title>What versions of Delphi does Log4Delphi support?</title>
+					<p>Log4Delphi is developed on Delphi 6 Enterprise and has been
+						made to compile on Delphi 5. It is assumed that later
+						versions of Delphi should work. Prior versions will most
+						likely run into errors. We will release packages for
+						prior versions of Delphi in later versions of Log4Delphi.</p>
+				</section>
+				<section>
+					<title>Where can I read an overview about how to work with 
+						Log4Delphi?</title>
+					<p>See the <link href="getstarted.html">Getting Started</link> 
+						guide.</p>
+				</section>
+				<section>
+					<title>Which version of Log4Delphi does the website documentation 
+						relate to?</title>
+					<p>The latest stable release, by using the latest release the
+						information contained on the website will be relevant.</p>
+				</section>	
+				<section>
+					<title>How can I use CVS to keep up to date with the latest 
+						codebase?</title>
+					<p>See the <link href="cvs.html">CVS</link> guide.</p>
+				</section>				
+			</section>
+			<section>
+				<title>Technical</title>
+				<section>
+					<title>Does It Run On Linux?</title>
+					<p>Log4Delphi is generic enough to be compiled on Kylix. Although 
+						this has not yet been tested it should work without error.</p>
+				</section>
+				<section>
+					<title>What is the MD5 file in the file releases?</title>
+					<p>The MD5 file is a text file that contains an MD5 checksum
+						of the corresponding archive generated at the same time that the 
+						archive	was created. It is used to ensure the integrity of the
+						downloaded archive. For more information see the 
+						<link href="download.html">Download</link> page.</p>
+				</section>			
+			</section>
+			<section>
+				<title>Older Versions</title>
+				<section>
+					<title>How can I upgrade to the latest version?</title>
+					<p>It depends how you installed the previous version. If you 
+						installed the package it is recommended to first uninstall it 
+						before proceeding to install the new package. If, however, you 
+						simply copied the source code into your project's code base, 
+						then simply overwriting them with the newer source files should 
+						work. See the <link href="userguide.html">User Guide</link>
+						for specific instructions.</p>
+				</section>						
+			</section>
+			<section>
+				<title>General</title>
+				<section>
+					<title>Where are the log files to find more infomation about 
+						errors?</title>
+					<p>Log4Delphi's internal logging will send log output to a file 
+						named <code>log4delphi.log</code> in the current directory of 
+						your application, this will typically be the directory from 
+						which your application gets run. You can control this feature
+						using the <code>log4delphi.debug</code> directive in a properties
+						configuration file. See the <link href="userguide.html">User Guide</link> 
+						for more information.</p>
+				</section>	
+				<section>
+					<title>How can I help or contribute?</title>
+					<p> Join one of the Log4Delphi project 
+						<link href="contact.html">mailing lists</link>  and tell us what 
+						you would like to see improved. We regard all feedback as 
+						valuable, particularly from newcomers—often, close proximity 
+						blinds software developers to faults that are obvious to everyone 
+						else. Don't be shy!</p>
+				</section>
+				<section>
+					<title>Why create new logging project for Delphi? Analogous project Log4D already exists?</title>
+					<p> Log4D last updated their CVS 16 Months ago, the project has had no recent
+						activity since then. They also have no file releases which means new users
+						would have to get source code from the CVS repository which is not good.
+					</p><p>
+						Log4D is also a direct port of Log4J while Log4Delphi is loosely based on
+						Log4J which means that Log4Delphi does not have to follow what Log4J is
+						doing, we can deviate from log4j at any time, which is a good thing,
+						considering the numerous differences between Java and Delphi.</p>						
+				</section>				
+			</section>
+		</section>
+	</body>
+	<footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>					

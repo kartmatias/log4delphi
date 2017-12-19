@@ -1,0 +1,25 @@
+object TConsole: TTConsole
+  Left = 318
+  Height = 300
+  Top = 237
+  Width = 400
+  BorderStyle = bsSizeToolWin
+  Caption = 'Log4Delphi Console'
+  ClientHeight = 300
+  ClientWidth = 400
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  ParentFont = False
+  LCLVersion = '0.9.27'
+  object Memo1: TMemo
+    Height = 300
+    Width = 400
+    Align = alClient
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Andale Mono'
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+end

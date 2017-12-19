@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+          
+<document> 
+    <header>
+        <title>Log4Delphi Tutorial</title>
+    </header>
+    <body>
+		<section>
+			<title>About This Tutorial</title>
+			<p>This tutorial provides a step by step guide to using Log4Delphi. 
+				It does not attempt to explain or provide an in depth discussion on
+				any details. If you want more detail check the <link href="userguide.html">User Guide</link>.</p>
+		</section>
+        <section>
+			<title>Step 1: Obtaining a Source Distribution</title>
+			<section>
+				<title>1.1 Download the Source Distribution</title>
+				<p>Download a source distribution of Log4Delphi <code>log4delphi-version.archive</code> from <link href="https://sourceforge.net/project/showfiles.php?group_id=145326">here</link>. I used <code>log4delphi-0.4-src.tar.gz</code> for this tutorial.</p>
+			</section>
+			<section>
+				<title>1.2 Extract The Archive</title>
+				<p>Extract the archive using the tool of your choice to the location of your choice. I used Zipgenius to extract it to my <code>F:\</code> drive. This resulted in a folder named <code>F:\log4delphi-0.4</code></p>
+			</section>			
+        </section>
+        <section>
+			<title>Step 2: Creating a New Project</title>           
+			<section>
+				<title>2.1 Launch Delphi And Save Project</title>
+				<ol>
+					<li>Create a folder named <code>tutorial</code> in the location of your choice. I used my <code>F:\</code> drive again.</li>
+					<li>Launch Delphi and save the project in the <code>tutorial</code> folder you created.</li>
+					<li>Now add a button to the form and label its caption "Click Me!".<br/><img src="images/tutorial1.jpg" alt="Form with Button"/></li>
+					<li>Copy all the Pascal source files from the <code>log4delphi-version/src/delphi</code> folder, including the <code>util</code> folder and its contents into the tutorial folder, excluding the <code>TConsoleUnit.pas</code> file.</li>
+					<li>Now add the source files to your project by selecting <code>Project &gt; Add To Project</code> from the main menu in Delphi.</li>
+					<li>Select the source files and click the Open button.<br/><img src="images/tutorial2.jpg" alt="Adding the source code."/></li>
+					<li>Now copy the file named <code>log4delphi.properties</code> in the <code>log4delphi/example</code> folder to your tutorial folder.</li>
+				</ol>
+			</section>			
+        </section>
+        <section>
+			<title>Step 3: Perfromming Logging</title>     
+			<ol>
+				<li>Select <code>Project &gt; View Source</code> from the main menu in Delphi.</li>
+				<li>Add the line <code>TConfiguratorUnit.doPropertiesConfiguration('log4delphi.properties');</code> beneath the line that reads <code>Application.Initialize;</code>.</li>
+				<li>Now add an <code>onClick</code> event handler to the button. In the handler add the line <code>TLogger.getInstance.debug('Button Clicked!');</code>.</li>
+				<li>Finally add an <code>onDestroy</code> handler to the main form. Add the following code to the handler: <code>TLogger.freeInstances;</code>.</li>
+			</ol>      
+        </section>
+        <section>
+			<title>Step 4: Evaluating The Log File</title>           
+			<ol>
+				<li>Compile and run the application. Click the button three times and then exit the application.</li>
+				<li>You should have a log file in the tutorial folder named <code>app.log</code> with the following content<br/>DEBUG - Button Clicked<br/>DEBUG - Button Clicked<br/>DEBUG - Button Clicked</li>
+			</ol>
+        </section>
+		<section>
+			<title>Source Code</title>
+			<source>
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+   TLoggerUnit;
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+   TLogger.getInstance.debug('Button Clicked!');
+end;
+
+procedure TForm1.FormDestroy(Sender: TObject);
+begin
+   TLogger.freeInstances;
+end;
+
+end.
+
+			</source>
+		</section>					
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

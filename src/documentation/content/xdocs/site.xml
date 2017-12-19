@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<site label="Log4Delphi" 
+      href="" 
+      xmlns="http://apache.org/forrest/linkmap/1.0" 
+      tab="home">
+
+  <about label="About">
+    <index label="Welcome" href="index.html" description="Welcome to Log4Delphi"/>
+	<license label="License" href="license.html" description="Log4Delphi License"/>
+    <download label="Download" href="download.html" description="Download Log4Delphi"/>
+	<install label="Install" href="install.html" description="Install Log4Delphi"/>
+    <changes label="Changes" href="changes.html" description="History of Changes" />
+  </about>
+  
+  <project label="Project">
+  	<mission label="Mission" href="mission.html" description="Log4Delphi Project Mission" />
+  	<mission label="Bylaws" href="bylaws.html" description="Log4Delphi Project Bylaws" />
+  </project>
+  
+  <quick label="Quick Start" tab="quick">
+  	<pkg label="Basics" href="quickstart.html" description="Quick Start Basics" />
+  </quick>  
+  
+  <documentation label="Documentation" tab="docs"> 
+    <overview label="Overview" href="overview.html" description="Documentation Overview" />
+	<getstarted label="Get Started" href="getstarted.html" description="Getting Started With Log4Delphi"/>
+	<tutorial label="Tutorial" href="tutorial.html" description="Log4Delphi Tutorial"/>
+	<guide label="User Guide" href="userguide.html" description="Log4Delphi User Guide"/>
+    <faq label="FAQ" href="faq.html" description="Frequently Asked Questions about Log4Delphi"/>  
+	<api label="API" href="http://log4delphi.sourceforge.net/api/html/Log4Delphi.htm" description="Log4Delphi API"/>  
+	<troubleshooting label="Troubleshooting" href="troubleshooting.html" description="Troubleshooting Log4Delphi"/>  
+  </documentation>
+  
+  <how-to label="How-To" tab="docs">
+  	<pkg label="Create A Package" href="howto-pkg.html" description="How-To Create A package" />
+  </how-to>
+  
+  <contributing label="Getting Involved" tab="contrib">
+  	<developerguide label="Guide" href="developerguide.html" decription="Developer Guide" />
+	<design label="Design" href="design.html" description="Log4 Delphi Design Overview"/>    		
+	<plan label="Release Plan" href="releases.html" description="Log4 Delphi Release Plan"/>    	
+    <contact label="Contact" href="contact.html" description="Contact Log4Delphi"/>    	
+    <todo label="To Do" href="todo.html" description="Still to do" />    	
+	<standards label="Coding Standards" href="standards.html" description="Log4Delphi Coding Standards"/>    	
+    <cvs label="CVS Repo" href="cvs.html" description="Log4Delphi CVS Repository" />    	
+  </contributing>
+
+  <external-refs>
+    <xml.apache.org href="http://xml.apache.org/">
+      <forrest href="forrest/">
+        <validation href="validation.html"/>
+        <webapp href="your-project.html#webapp"/>
+        <document-v11 href="document-v11.html"/>
+      </forrest>
+      <cocoon href="cocoon/"/>
+    </xml.apache.org>
+  </external-refs>
+
+</site>

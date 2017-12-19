@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN"
+    "http://apache.org/forrest/dtd/document-v12.dtd">
+<document>
+    <header>
+        <title>How-To Create A Package</title>
+        <subtitle>Create A Delphi Package for your Delphi Version</subtitle>
+    </header>
+    <body>
+    	<section>
+    		<title>Overview</title>
+    		<p>This How-To describes the steps necessary to create a Log4Delphi package for your version of Delphi.</p>
+    	</section>
+    	<section>
+    		<title>Intended Audience</title>
+    		<p>Developers who wish to have a Log4Delphi package where none exists for their version of Delphi.</p>
+    	</section>
+    	<section>
+    		<title>Prerequisites</title>
+    		<p>You should have:</p>
+    		<ol>
+    		    <li>A source distribution of Log4Delphi.</li>
+    		    <li>The version of Delphi you wish to use, installed and operational on your computer.</li>
+    		</ol>
+    	</section>
+    	<section>
+    		<title>Steps</title>
+    		<p>Here is how to proceed.</p>
+    		<ol>
+    		    <li>Launch Delphi and close all open projects.</li>
+    		    <li>Select <em>New</em> from the <em>File</em> menu and choose <em>Package</em>.</li>
+    		    <li>Save the package in the <code>log4Delphi-</code><em>version</em><code>/src/delphi</code> directory as <code>log4delphi_D</code><em>&lt;delphi version&gt;</em><code>.dpk</code></li>
+    		    <li>In the package viewer in Delphi, click the <em>Add</em> button to add source code to the package. Click the <em>Browse</em> button in the dialog that appears.</li>
+    		    <li>Select all the source code (<code>*.pas</code>) including source files in the <code>util/</code> sub-directory.</li>
+    		    <li>Click the <em>OK</em> button.</li>
+    		    <li>Select <em>Options</em> from the <em>Project</em> menu and select the <em>Directories/Conditionals</em> tab.</li>
+    		    <li>Set the <em>Output</em> and <em>Unit Output</em> directories to <code>../../build</code>. Click the <em>OK</em> button.</li>
+    		    <li>You can now click the <em>Compile</em> button to compile the package.</li>
+    		    <li>You can optionally click the <em>Install</em> button to install the package.</li>    		    
+    		</ol>
+    	</section>
+    	<section>
+    		<title>Summary</title>
+    		<p>If no Log4Delphi package exists for your version it is quite easy to create your own using the steps given in this document.</p>
+    	</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

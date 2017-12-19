@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+          
+<document> 
+    <header>
+        <title>Log4Delphi Coding Standards</title>
+    </header>
+    <body>
+        <section>
+            <title>Coding Standards Used By Log4Delphi Developers</title>
+			<section>
+				<title>Introduction</title>
+				<p>This document describes a list of coding conventions that are 
+					required for code submissions to the project. By default, the coding 
+					conventions for most Open Source Projects should follow the existing 
+					coding conventions in the code that you are working on. For example, 
+					if the begin is on the same line as the if statement, then you should 
+					write all your code to have that convention.</p>
+				<p><strong>If you commit code that does not follow these conventions and 
+					you are caught, you are responsible for fixing that code.</strong></p>
+			</section>
+			<section>
+				<title>General Source Conventions</title>
+				<section>
+					<title>Indentation</title>
+					<p>Indenting is three spaces per level. <strong>NO TAB</strong> 
+						characters!</p>
+						<p>The reserved words <code>unit, uses, type, interface, 
+							implementation, initialization and finalization</code> are
+							always flush with the left margin.</p>
+				</section>
+				<section>
+					<title>Margins</title>
+					<p>Margins are set at 80 characters. In general, no source code should
+						exceed past this margin. Statements that are longer than 80
+						characters should be wrapped at an operator, ie: parenthesis,
+						commas, etc. If a statement is wrapped it should be indented
+						to match the block it is in.</p>
+				</section>
+				<section>
+					<title>Comments</title>
+					<p>Comments should be made using <code>{</code> and <code>}</code>.
+						Single line comments embedded within the code are fine if they
+						are done with <code>//</code>. The <code>{* *}</code> comments
+						should be avoided. Code should be commented using the 
+						<link href="http://dephicodetodoc.sourceforge.net/">
+							DelphiCodeToDoc</link> / Javadoc format so that the API can 
+							be produced from it.</p>
+				</section>
+				<section>
+					<title>Conditional Defines</title>
+					<p>Conditional defines are with <code>{ }</code> braces and in
+						uppercase. Each define is named in its closing block to aid
+						readability and they are indented as blocks.</p>
+					<source>
+if (true) then
+begin
+   {$IFDEF SOMEVAL}
+      // statements here
+   {$ELSE}
+      // statements here
+   {$ENDIF SOMEVAL}
+end;
+					</source>
+				</section>
+				<section>
+					<title>Begin and End</title>
+					<p>Begin and end occur on separate lines with an exception being made 
+						for an else clause.</p>
+					<source>
+if (x = 2) then
+begin
+   y := 0;
+end else begin
+   y := x;
+end;
+					</source>
+				</section>																
+			</section>
+			<section>
+				<title>Object Pascal Conventions</title>
+				<section>
+					<title>Parenthesis</title>
+					<p>White space is permitted but not required or enforced. Generally
+						there is no space between an opening parenthesis and the next
+						character as well as between a character and a closing 
+						parenthesis.</p>
+					<source>
+if (x = 2) then  // PREFERED way of doing it
+   // ...
+   
+if ( x = 2 ) then  // ACCEPTABLE way of doing it
+   // ...
+					</source>
+				</section>
+				<section>
+					<title>Reserved Words</title>
+					<p>Reserved words and key words are always in lower case.</p>
+				</section>
+				<section>
+					<title>Case Statements</title>
+					<p>Case statements follow a strict indenting pattern:</p>
+					<source>
+case x of 
+   0 : begin
+      // statements
+   end;
+   // ...
+   n : begin
+      // statements   
+   end;
+else {CASE}
+   // ...
+end;
+					</source>
+				</section>
+				<section>
+					<title>Classes</title>
+					<p>All classes are named with a capital T followed by the class's
+						name in sentence case. All classes should descend (subclass)
+						from <code>TObject</code>, so that they may be added as
+						objects to <code>TStrings</code> instances. The keywords
+						<code>public, private, protected, published</code> are indented
+						with the class and occur in the order: private, protected, 
+						public and published.</p>
+					<source>
+   TFileAppender = class (TObject)
+   private
+      // statements   
+   protected
+      // statements
+   public
+      // statements
+   end;
+					</source>
+				</section>				
+			</section>
+			<section>
+				<title>File Conventions</title>
+				<section>
+					<title>Units</title>
+					<p>Each unit is declared in its own file with the file name
+						the name of the unit with a <code>Unit.pas</code> suffix.</p>
+					<p>Only one class may be defined per unit, per file. The Unit name
+						will be the class name with the <code>Unit</code> suffix.</p>
+				</section>
+				<section>
+					<title>File Header</title>
+					<p>Each source file must contain the header:</p>
+					<source>
+{
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+}
+					</source>
+				</section>
+			</section>
+			<section>
+				<title></title>
+			</section>
+		</section>
+		<section>
+			<title>Other Guidelines</title>
+			<p>1. Destructors of a class should only free the objects within that class
+				and call the super class's destructor to free those objects. Abstract
+				classes that define objects on the heap should include destructors.</p>
+			<p>2. In general, the caller is responsible for freeing memory. Objects
+				passed as parameters to a procedure or function are not freed by
+				that function but shouuld be freed by that function's caller.</p>
+		</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

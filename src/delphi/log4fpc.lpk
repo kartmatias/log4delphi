@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="log4fpc"/>
+    <CompilerOptions>
+      <Version Value="8"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="util\"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Files Count="28">
+      <Item1>
+        <Filename Value="tappenderunit.pas"/>
+        <UnitName Value="TAppenderUnit"/>
+      </Item1>
+      <Item2>
+        <Filename Value="tconfiguratorunit.pas"/>
+        <UnitName Value="TConfiguratorUnit"/>
+      </Item2>
+      <Item3>
+        <Filename Value="TConsoleUnit.lfm"/>
+        <Type Value="LFM"/>
+      </Item3>
+      <Item4>
+        <Filename Value="TConsoleUnit.lrs"/>
+        <Type Value="LRS"/>
+      </Item4>
+      <Item5>
+        <Filename Value="tconsoleunit.pas"/>
+        <UnitName Value="TConsoleUnit"/>
+      </Item5>
+      <Item6>
+        <Filename Value="tdbappenderunit.pas"/>
+        <UnitName Value="TDBAppenderUnit"/>
+      </Item6>
+      <Item7>
+        <Filename Value="tdbloginserterunit.pas"/>
+        <UnitName Value="TDBLogInserterUnit"/>
+      </Item7>
+      <Item8>
+        <Filename Value="terrorhandlerunit.pas"/>
+        <UnitName Value="TErrorHandlerUnit"/>
+      </Item8>
+      <Item9>
+        <Filename Value="tfileappenderunit.pas"/>
+        <UnitName Value="TFileAppenderUnit"/>
+      </Item9>
+      <Item10>
+        <Filename Value="thtmllayoutunit.pas"/>
+        <UnitName Value="THTMLLayoutUnit"/>
+      </Item10>
+      <Item11>
+        <Filename Value="tlayoutunit.pas"/>
+        <UnitName Value="TLayoutUnit"/>
+      </Item11>
+      <Item12>
+        <Filename Value="tlevelunit.pas"/>
+        <UnitName Value="TLevelUnit"/>
+      </Item12>
+      <Item13>
+        <Filename Value="tloggerunit.pas"/>
+        <UnitName Value="TLoggerUnit"/>
+      </Item13>
+      <Item14>
+        <Filename Value="tloggingeventunit.pas"/>
+        <UnitName Value="TLoggingEventUnit"/>
+      </Item14>
+      <Item15>
+        <Filename Value="tloglogunit.pas"/>
+        <UnitName Value="TLogLogUnit"/>
+      </Item15>
+      <Item16>
+        <Filename Value="tnullappenderunit.pas"/>
+        <UnitName Value="TNullAppenderUnit"/>
+      </Item16>
+      <Item17>
+        <Filename Value="tonlyonceerrorhandlerunit.pas"/>
+        <UnitName Value="TOnlyOnceErrorHandlerUnit"/>
+      </Item17>
+      <Item18>
+        <Filename Value="toptionconverterunit.pas"/>
+        <UnitName Value="TOptionConverterUnit"/>
+      </Item18>
+      <Item19>
+        <Filename Value="tpatternlayoutunit.pas"/>
+        <UnitName Value="TPatternLayoutUnit"/>
+      </Item19>
+      <Item20>
+        <Filename Value="tpropertyconfiguratorunit.pas"/>
+        <UnitName Value="TPropertyConfiguratorUnit"/>
+      </Item20>
+      <Item21>
+        <Filename Value="trollingfileappenderunit.pas"/>
+        <UnitName Value="TRollingFileAppenderUnit"/>
+      </Item21>
+      <Item22>
+        <Filename Value="tsimplelayoutunit.pas"/>
+        <UnitName Value="TSimpleLayoutUnit"/>
+      </Item22>
+      <Item23>
+        <Filename Value="twriterappenderunit.pas"/>
+        <UnitName Value="TWriterAppenderUnit"/>
+      </Item23>
+      <Item24>
+        <Filename Value="txmllayoutunit.pas"/>
+        <UnitName Value="TXMLLayoutUnit"/>
+      </Item24>
+      <Item25>
+        <Filename Value="util\dcconfiguration.pas"/>
+        <UnitName Value="DCConfiguration"/>
+      </Item25>
+      <Item26>
+        <Filename Value="util\tprintwriterunit.pas"/>
+        <UnitName Value="TPrintWriterUnit"/>
+      </Item26>
+      <Item27>
+        <Filename Value="util\tpropertiesunit.pas"/>
+        <UnitName Value="TPropertiesUnit"/>
+      </Item27>
+      <Item28>
+        <Filename Value="util\tstringunit.pas"/>
+        <UnitName Value="TStringUnit"/>
+      </Item28>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)\"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

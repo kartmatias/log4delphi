@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN"
+    "http://apache.org/forrest/dtd/document-v12.dtd">
+<document>
+    <header>
+        <title>Documentation Overview</title>
+    </header>
+    <body>
+    	<section>
+    		<title>Documentation</title>
+    		<p>The following documentation is included with the standard Log4Delphi distribution and also browsable online:</p>
+    		<dl>
+    		    <dt><link href="getstarted.html">Getting Started Guide</link></dt>
+    		    <dd>For brief information on how to quickly get started with Log4Delphi.</dd>
+    		    <dt><link href="tutorial.html">Log4Delphi Tutorial</link></dt>
+    		    <dd>For those who want a step by step guide.</dd>
+    		    <dt><link href="userguide.html">Log4Delphi User Guide</link></dt>
+    		    <dd>A complete guide to using Log4Delphi.</dd>
+    		    <dt><link href="faq.html">Frquently Asked Questions</link></dt>
+    		    <dd>Frequently Asked Questions about Log4Delphi.</dd>
+    		    <dt><link href="http://log4delphi.sourceforge.net/api/html/Log4Delphi.htm">Application Programmer Interface</link></dt>
+    		    <dd>View the API.</dd>
+    		    <dt><link href="troubleshooting.html">Having Problems?</link></dt>
+    		    <dd>For information on troubleshooting.</dd>
+    		</dl>
+    	</section>
+    	<section>
+    		<title>How-To</title>
+    		<p>The following is a list of how-tos.</p>
+    		<dl>
+    		    <dt><link href="howto-pkg.html">Create A Package</link></dt>
+    		    <dd>Create A Delphi Package for your Delphi Version.</dd>
+    		</dl>
+    	</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

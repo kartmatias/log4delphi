@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+          
+<document> 
+    <header>
+        <title>Log4Delphi Release Plan</title>
+    </header>
+    <body>
+        <section>
+            <title>Official Log4Delphi Release Plan</title>
+			<table>
+				<tr>
+					<th>Date</th>
+					<th>Version</th>
+					<th>Code Name</th>
+					<th>Features</th>
+				</tr>
+				<tr>
+					<td>6 Aug 2005</td>
+					<td>0.1</td>
+					<td>Nasedo</td>
+					<td>Initial Release</td>
+				</tr>
+				<tr>
+					<td>3 Sep 2005</td>
+					<td>0.2</td>
+					<td>Valhandra</td>
+					<td>
+						<ul>
+						    <li>Multiple Loggers</li>
+						    <li>Layout#getHeader</li>
+						    <li>Layout#getFooter</li>
+						    <li>Layout#ignoresException</li>
+						    <li>Layout#getContentType</li>
+						    <li>TWriterAppender</li>
+						    <li>TErrorHandler</li>
+						    <li>TOnlyOnceErrorHandler</li>
+						    <li>TLogLog</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>5 Oct 2005</td>
+					<td>0.3</td>
+					<td>River Dog</td>
+					<td>
+						<ul>
+						    <li>TXMLLayout</li>
+						    <li>THTMLLayout</li>
+						    <li>Delphi 5 &amp; 6 Packages</li>
+						</ul>
+					</td>					
+				</tr>
+				<tr>
+					<td>5 Dec 2005</td>
+					<td>0.4</td>
+					<td>Valenti</td>
+					<td>Properties Configuration</td>
+				</tr>
+				<tr>
+					<td>5 Jan 2005</td>
+					<td>0.5 (Alpha)</td>
+					<td>Isis</td>
+					<td>TPatternLayout</td>
+				</tr>	
+				<tr>
+					<td>5 Feb 2006</td>
+					<td>0.6</td>
+					<td>Thanatos</td>
+					<td>TDBAppender</td>
+				</tr>	
+				<tr>
+					<td>5 Aug 2006</td>
+					<td>0.7</td>
+					<td>Charon</td>
+					<td>TRollingFileAppender</td>
+				</tr>	
+				<tr>
+					<td>5 Sep 2006</td>
+					<td>0.8 (Beta)</td>
+					<td>Erebus</td>
+					<td>INI File Configuration</td>
+				</tr>	
+				<tr>
+					<td>5 Oct 2006</td>
+					<td>1.0</td>
+					<td>Cronus</td>
+					<td>XML File Configuration</td>
+				</tr>																							
+			</table>
+        </section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

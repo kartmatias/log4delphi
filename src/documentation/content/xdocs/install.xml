@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+          
+<document> 
+    <header>
+        <title>Installing Log4Delphi</title>
+    </header>
+    <body>
+		<section>
+            <title>Extracting The Archive</title>
+			<p>The following instructions can be used for both binary and source 
+				distributions.</p>
+			<p>There are two archive versions available, a ZIP archive which may
+				be extracted using a program like Winzip and a GNU-Zipped 
+				Tarball that can also be extracted using Winzip.</p>
+			<p>Extract the archive to a location of your choice. A resulting
+				folder named <code>log4delphi-</code><em>version</em> will contain
+				the contents of the package.</p>
+		</section>
+        <section>
+            <title>Installing</title>
+            <p>There are two ways in which you can install and use Log4Delphi. 
+				The first is to install the package and the second is to simply 
+				include the source code in your application's code base. Both have 
+				pros and cons and should be carefully considered before making the 
+				decision.</p>
+			<section>
+				<title>Installing The Package</title>
+				<p>Installing the Log4Delphi package will make it available to be 
+					used in all your projects.</p>
+				<p>Using a binary distribution (<code>log4delphi-</code><em>version</em>
+					<code>-bin.</code><em>archive</em>), the steps are:</p>
+				<ol>
+					<li>Launch Delphi.</li>
+					<li>Select <code>Component &gt; Install Packages</code> from
+						the main menu.</li>
+					<li>Click the <code>Add</code> button.</li>
+					<li>Browse to where you extracted the archive and select the
+						file named <code>log4delphi.bpl</code>, should be in the
+						<code>bin/</code> directory.</li>
+					<li>You may need to add the compilation units to your
+						library path. To do so, select 
+						<code>Tools &gt; Environment Options</code> from the
+						main menu.</li>
+					<li>Select the Library Tab and add the folder containing
+						<code>log4delphi.bpl</code> to the library path.</li>
+					<li>You are ready to go!</li>
+				</ol>
+			</section>
+			<section>
+				<title>Using The Source Code</title>
+				<p>This option is best for people who wish to add to or extend 
+					Log4Delphi or people who are busy developing Log4Delphi or
+					people who wish to include Log4Delphi into their existing
+					project's code base.</p>
+				<p>Using a source distribution (<code>log4delphi-</code><em>version</em>
+					<code>-src.</code><em>archive</em>), the steps are:</p>
+				<ol>
+					<li>Copy all the *.pas files from the 
+						<code>log4delphi\src\delphi</code> directory to your
+						project's source directory (include the <code>util</code>)
+						directory.</li>
+					<li>Launch Delphi and Open your project.</li>
+					<li>Select <code>Project &gt; Add To Project</code> in the
+						main menu.</li>
+					<li>In the dialog that opens, select all the Log4Delphi source 
+						files <code>*.pas</code> that you added earlier.</li>
+					<li>Click the <code>Open</code> button.</li>
+					<li>Now build your project.</li>
+					<li>You are ready to go!</li>
+				</ol>
+			</section>
+        </section>
+		<section>
+            <title>Building Log4Delphi From Source</title>
+			<p>The source distribution containsa Makefile that can be used to build
+				Log4Delphi from source. You can use Borland's Make which is installed
+				automatically by Delphi.</p>
+			<p>Open a command prompt (MS-DOS Prompt) and navigate to the root source
+				directory. Simply issue the command <code>make</code> and Log4Delphi will
+				be built.</p>
+			<p>The Makefile will fail to complete and will not generate HTML documentation.
+				This is because you need to have Apache Forrest installed and set up before
+				running make. This is not required to build Log4Delphi, but if you wish
+				to generate the HTML docs then you need to have it.</p>
+		</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

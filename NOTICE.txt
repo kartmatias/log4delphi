@@ -1,0 +1,4 @@
+This product includes software developed by 
+o The Apache Software Foundation (http://www.apache.org/)
+o The DUnit Project (http://dunit.sourceforge.net)
+o The DelphiCodeToDoc Project (http://dephicodetodoc.sourceforge.net)

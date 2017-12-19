@@ -1,0 +1,120 @@
+ <!--
+   Copyright 2005 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+
+<!--
+   This file is an Apache Ant buildscript. Apache Ant is a powerful
+   build tool for the Java Platform and can be found at:
+   http://ant.apache.org.
+   
+   This file is used in conjunction with Ant to produce the
+   zipped distributions of Log4Delphi. It is not required to
+   build Log4Delphi in any way, it is merely used as an aid
+   to perform various tasks by the development team like
+   creating zipped distributions, updating the website
+   and the makefile.
+-->
+<project name="log4delphi" default="zip" basedir=".">
+
+    <property file="src/conf/build.properties"/>
+    
+    <!-- 
+        Generate a makefile for the project based on the properties
+        specified in the build.properties file. This enables properties
+        to be set and maintained in one location and filtered through
+        to wherever they are needed.
+    -->
+    <target name="makefile"
+        description="o Generate the Makefile.">
+        <delete file="Makefile" />
+        <copy todir="." file="${source.conf}/Makefile" filtering="on">
+            <filterset>
+                <filter token="name" value="${project.name}"/>
+                <filter token="title" value="${project.title}"/>
+                <filter token="full" value="${project.title.full}"/>
+                <filter token="version" value="${project.version}"/>
+                <filter token="failonerror" value="${test.failonerror}"/>
+                <filter token="conf" value="${source.conf}"/>
+                <filter token="delphi" value="${source.delphi}"/>
+                <filter token="test" value="${source.test}"/>
+                <filter token="db" value="${source.db}"/>
+                <filter token="build" value="${build.home}"/>
+                <filter token="build-conf" value="${build.conf}"/>
+                <filter token="build-tests" value="${build.tests}"/>
+                <filter token="build-docs" value="${build.docs}"/>
+                <filter token="build-api" value="${build.api}"/>
+            </filterset>  	
+        </copy>
+    </target>  
+
+    <!-- 
+       Upload the web site to the server using an alternate build
+       script to do the actual work.
+    -->
+    <target name="site" description="o Upload the website.">    
+        <ant antfile="build-website.xml" inheritAll="false" />
+    </target>
+
+    <!-- 
+       Create the zipped distributions. This target calls the relevant
+       sub targets.
+    -->
+    <target name="zip" depends="zip.bin,zip.src" 
+        description="o Create zipped distribution.">        
+    </target>
+    
+    <!-- Create the binary distributions. -->
+    <target name="zip.bin">
+        <mkdir dir="${build.dist}"/>
+        
+        <!-- Create the GNU-zipped tar archive. -->
+        <tar longfile="gnu" tarfile="${build.bin.tar.name}">
+            <tarfileset dir="${build.dist.bin}"/>
+        </tar>
+        <gzip zipfile="${build.bin.gz.name}" src="${build.bin.tar.name}"/>
+        <delete file="${build.bin.tar.name}" />
+    
+        <!-- Create the zip archive. -->
+        <zip zipfile="${build.bin.zip.name}" >
+            <zipfileset dir="${build.dist.bin}"/>
+        </zip>
+        
+        <!-- Create the checksums. -->
+        <checksum file="${build.bin.gz.name}"/>
+        <checksum file="${build.bin.zip.name}"/>
+    </target>
+
+    <!-- Create the source distributions. -->
+    <target name="zip.src">
+        <mkdir dir="${build.dist}"/>
+        
+        <!-- Create the GNU-zipped tar archive. -->
+        <tar longfile="gnu" tarfile="${build.src.tar.name}">
+            <tarfileset dir="${build.dist.src}"/>
+        </tar>
+        <gzip zipfile="${build.src.gz.name}" src="${build.src.tar.name}"/>
+        <delete file="${build.src.tar.name}" />
+    
+        <!-- Create the zip archive. -->
+        <zip zipfile="${build.src.zip.name}" >
+            <zipfileset dir="${build.dist.src}"/>
+        </zip>
+      
+        <!-- Create the checksums. -->
+        <checksum file="${build.src.gz.name}"/>
+        <checksum file="${build.src.zip.name}"/>
+    </target>
+
+</project>

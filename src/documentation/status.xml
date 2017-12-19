@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<status>
+
+  <developers>
+    <person name="Trevor Miller" email="tcmiller@users.sourceforge.net" id="TCM" />
+    <!-- Add more people here -->
+  </developers>
+
+  <changes>
+    <release version="0.5 [Isis]" date="5 January 2005">
+      <action dev="TCM" type="add" context="docs">
+		  Added Developer Guide, Documentation Overview, Project Mission, Project Bylaws, Troubleshooting Guide, How-To Create A Package.
+      </action>	
+      <action dev="TCM" type="update" context="docs">
+		  Updated HTML documentation: HTML Documentation Structure and Organization, UML Diagram.
+      </action>	    
+      <action dev="TCM" type="add" context="source">
+		  Added: TDBAppender, TDBLogInserter, initialization and finalization to TLevel, TPatternLayout.
+      </action>	    
+      <action dev="TCM" type="update" context="source">
+		  Updated: Fixed small bug in TPrintWriter and TFileAppender, Completely rewritten unit tests.
+      </action>	    
+    </release>
+	<release version="0.4 [Valenti]" date="6 December 2005">	
+      <action dev="TCM" type="add" context="docs">
+		  Added PDF version of all documentation.
+      </action>		
+      <action dev="TCM" type="update" context="docs">
+		  Updated HTML documentation: Release Plan, Welcome Page, Tutorial, User Guide, FAQ and To Do List.
+      </action>		  
+      <action dev="TCM" type="add" context="source">
+		  Added: TPropertyConfigurator, TOptionConverter, TStringTokenizer and Unit test. Added example properties file.
+      </action>		
+      <action dev="TCM" type="update" context="source">
+		  Updated: Made default site-wide threshold to the ALL level, Added removeAllAppenders to TLogger and Fixed small bug in TProperties.
+      </action>	  	  
+	</release>	
+	<release version="0.3 [River Dog]" date="2 October 2005">	
+      <action dev="TCM" type="add" context="docs">
+		  Added: Created first draft of User Guide.
+      </action>	  
+      <action dev="TCM" type="update" context="docs">
+		  Updated HTML documentation: Release Plan, Welcome Page and Install instructions.
+      </action>		  
+      <action dev="TCM" type="add" context="source">
+		  Added: THTMLLayout, XMLLayout and Unit test.
+      </action>		
+      <action dev="TCM" type="update" context="source">
+		  Updated: Override Signature to destructors, fixed bug #1297284. Added Delphi 5 package and changed code to compile on Delphi 5.
+      </action>	  	   
+      <action dev="TCM" type="update" context="source">
+		  Updated: Changed build.xml to only perform zipping of distributions, compilation is now performed entirely through make using the Makefile.
+      </action>	  	  
+	</release>
+    <release version="0.2 [Valhandra]" date="3 September 2005">
+      <action dev="TCM" type="add" context="admin">
+        Initial import into CVS.
+      </action>
+      <action dev="TCM" type="add" context="docs">
+		  Added: Changes, Tutorial, API, Design Overview, Release Plan, Coding Standards, CVS Repo and Documentation and Contributing sections to HTML Docsumentation.
+      </action>
+      <action dev="TCM" type="update" context="docs">
+		  Updated: Readme, Download Page, FAQ, Contact Page.
+      </action>	  
+      <action dev="TCM" type="add" context="source">
+		  Added: TWriterAppender, TErrorHandler, TOnlyOnceErrorHandler, TLogLog.
+      </action>	
+      <action dev="TCM" type="update" context="TLogger">
+          Added Util: Util folder now contains TPrintWRiter, TProperties and TStrings. These are used internally by Log4Delphi.
+      </action>	    
+      <action dev="TCM" type="update" context="TLoggingEvent">
+		  TLoggingEvent: added the exception field and getException method.
+      </action>	  
+      <action dev="TCM" type="update" context="TLayout">
+          TLayout: added the getHeader and getFooter methods as well as ignoresException and getContentType.
+      </action>
+      <action dev="TCM" type="update" context="TLogger">
+          TLogger: added multiple loggers accessible with the TLogger.getInstance(name) method.
+      </action>	  
+    </release>	
+	<release version="0.1 [Nasedo]" date="6 August 2005">
+      <action dev="TCM" type="add" context="admin">
+        Initial Release.
+      </action>		
+	</release>
+  </changes>
+
+  <todo>
+    <actions priority="high">
+      <action context="docs" dev="TCM">
+		Complete User's Guide.
+      </action>
+      <action context="code" dev="Open">
+		XML and INI file configuration.
+      </action>	 		 	  
+    </actions>
+  </todo>
+
+</status>

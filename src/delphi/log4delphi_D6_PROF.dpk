@@ -1,0 +1,68 @@
+package log4delphi_D6_PROF;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclx,
+  dbrtl,
+  bdertl,
+  ibxpress,
+  dbexpress;
+
+contains
+  TXMLLayoutUnit in 'TXMLLayoutUnit.pas',
+  TAppenderUnit in 'TAppenderUnit.pas',
+  TBDELogInserterUnit in 'TBDELogInserterUnit.pas',
+  TConfiguratorUnit in 'TConfiguratorUnit.pas',
+  TConsoleUnit in 'TConsoleUnit.pas' {TConsole},
+  TDBAppenderUnit in 'TDBAppenderUnit.pas',
+  TDBLogInserterUnit in 'TDBLogInserterUnit.pas',
+  TDBXLogInserterUnit in 'TDBXLogInserterUnit.pas',
+  TErrorHandlerUnit in 'TErrorHandlerUnit.pas',
+  TFileAppenderUnit in 'TFileAppenderUnit.pas',
+  THTMLLayoutUnit in 'THTMLLayoutUnit.pas',
+  TIBXLogInserterUnit in 'TIBXLogInserterUnit.pas',
+  TLayoutUnit in 'TLayoutUnit.pas',
+  TLevelUnit in 'TLevelUnit.pas',
+  TLoggerUnit in 'TLoggerUnit.pas',
+  TLoggingEventUnit in 'TLoggingEventUnit.pas',
+  TLogLogUnit in 'TLogLogUnit.pas',
+  TNullAppenderUnit in 'TNullAppenderUnit.pas',
+  TOnlyOnceErrorHandlerUnit in 'TOnlyOnceErrorHandlerUnit.pas',
+  TOptionConverterUnit in 'TOptionConverterUnit.pas',
+  TPatternLayoutUnit in 'TPatternLayoutUnit.pas',
+  TPropertyConfiguratorUnit in 'TPropertyConfiguratorUnit.pas',
+  TIniConfiguratorUnit in 'TIniConfiguratorUnit.pas',
+  TSimpleLayoutUnit in 'TSimpleLayoutUnit.pas',
+  TWriterAppenderUnit in 'TWriterAppenderUnit.pas',
+  TStringUnit in 'util\TStringUnit.pas',
+  TPrintWriterUnit in 'util\TPrintWriterUnit.pas',
+  TPropertiesUnit in 'util\TPropertiesUnit.pas',
+  TRollingFileAppenderUnit in 'TRollingFileAppenderUnit.pas',
+  TFileUnit in 'util\TFileUnit.pas';
+
+end.

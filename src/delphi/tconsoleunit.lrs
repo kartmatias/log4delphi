@@ -1,0 +1,12 @@
+{ Este es un archivo de recurso de Lazarus generado automáticamente }
+
+LazarusResources.Add('TTConsole','FORMDATA',[
+  'TPF0'#9'TTConsole'#8'TConsole'#4'Left'#3'>'#1#6'Height'#3','#1#3'Top'#3#237#0
+  +#5'Width'#3#144#1#11'BorderStyle'#7#13'bsSizeToolWin'#7'Caption'#6#18'Log4De'
+  +'lphi Console'#12'ClientHeight'#3','#1#11'ClientWidth'#3#144#1#11'Font.Heigh'
+  +'t'#2#245#9'Font.Name'#6#13'MS Sans Serif'#10'ParentFont'#8#10'LCLVersion'#6
+  +#6'0.9.27'#0#5'TMemo'#5'Memo1'#6'Height'#3','#1#5'Width'#3#144#1#5'Align'#7#8
+  +'alClient'#12'Font.CharSet'#7#12'ANSI_CHARSET'#11'Font.Height'#2#244#9'Font.'
+  +'Name'#6#11'Andale Mono'#10'ParentFont'#8#10'ScrollBars'#7#6'ssBoth'#8'TabOr'
+  +'der'#2#0#0#0#0
+]);

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+    <header>
+        <title>Contact the Log4Delphi Team</title>
+    </header>
+    <body>
+		<section>
+			<title>Reporting Bugs</title>
+			<p>You can report bugs 
+				<link href="http://www.sourceforge.net/tracker/?group_id=145326&amp;atid=761568">here</link>
+				.</p>
+		</section>		
+        <section>
+            <title>Using The Mailing Lists</title>
+			<p>A mailing list is an electronic discussion forum that anyone can 
+				subscribe to. When someone sends an email message to the mailing 
+				list, a copy of that message is broadcast to everyone who is 
+				subscribed to that mailing list. Mailing lists provide a simple 
+				and effective communication mechanism. With potentially thousands 
+				of subscribers, there is a common set of etiquette guidelines that 
+				you should observe. Please keep on reading.</p>
+				<section>
+					<title>Guidelines</title>
+					<section>
+						<title>Respect the mailing list type.</title>
+						<p>There are two types of lists.</p>
+						<dl>
+							<dt>User List</dt>
+							<dd> The User list is where you can send questions and 
+								comments about configuration, setup, usage and other 
+								"user" types of questions.</dd>
+							<dt>Developer List</dt>
+							<dd> The Developer list is where you can send questions and 
+								comments about the actual software source code and general 
+								"development" types of questions.</dd>
+						</dl>
+					</section>
+					<section>
+						<title>Ask smart questions. </title>
+						<p> Every volunteer project obtains its strength from the people 
+							involved in it. You are welcome to join any of our mailing 
+							lists and can choose to lurk, or actively participate; it's up 
+							to you. The level of community responsiveness to specific 
+							questions is generally directly proportional to the amount of 
+							effort you spend formulating your question.</p>
+					</section>	
+					<section>
+						<title>Keep your email short and to the point. </title>
+						<p>If your email is more than about a page of text, chances are 
+							that it won't get read by very many people. It is much better 
+							to try to pack a lot of informative information (see above 
+							about asking smart questions) into as small of an email as 
+							possible. If you are replying to a previous email, it is a 
+							good idea to only quote the parts that you are replying to 
+							and to remove the unnecessary bits. This makes it easier for 
+							people to follow a thread as well as making the email archives 
+							easier to search and read.</p>
+					</section>
+					<section>
+						<title>Do not send HTML or "Stylelized" email to the list.</title>
+						<p>If you are using Outlook or Outlook Express or Eudora, chances 
+							are that you are sending HTML email by default. There is 
+							usually a setting that will allow you to send "Plain Text" 
+							email. If you are using Microsoft products to send email, 
+							there are several bugs in the software that prevent you from 
+							turning off the sending of HTML email</p>
+					</section>
+					<section>
+						<title>Do not cross post messages.</title>
+						<p>In other words, pick a mailing list and send your messages to 
+							that mailing list only. Do not send your messages to multiple 
+							mailing lists. The reason is that people may be subscribed to 
+							one list and not to the other. Therefore, some people will 
+							only see part of the conversation.</p>
+					</section>									
+				</section>
+				<section>
+					<title>The Lists</title>
+					<section>
+						<title>The User's List</title>
+						<p>The user's list page can be found at: 
+							<link href="https://lists.sourceforge.net/lists/listinfo/log4delphi-user">
+							https://lists.sourceforge.net/lists/listinfo/log4delphi-user</link></p>
+					</section>
+					<section>
+						<title>The Developer's List</title>
+						<p>The developer's list page can be found at: 
+							<link href="https://lists.sourceforge.net/lists/listinfo/log4delphi-develop">
+							https://lists.sourceforge.net/lists/listinfo/log4delphi-develop</link></p>
+					</section>					
+				</section>															
+        </section>
+		<section>
+			<title>The Forums</title>
+			<p>The forums present another mechanism to get in touch with developers and 
+				users. While the mailing lists are the prefered method of contact, the 
+				forum provides a viable alternative for those who do not wish to join the 
+				mailing lists. The forums can be accessed 
+					<link href="https://sourceforge.net/forum/?group_id=145326">
+					here</link>.</p>
+		</section>
+		<section>
+			<title>Contacting the Webmaster</title>
+			<p>Any feedback relating specifically to the website may be sent to the 
+				webmaster via email. Any question not related to the website will 
+				simply be ignored so don't bother. The webmaster can be reached at 
+				<link href="mailto:tcmiller@users.sourceforge.net?subject=Log4Delphi-Feedback">
+				Webmaster</link>.</p>
+		</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

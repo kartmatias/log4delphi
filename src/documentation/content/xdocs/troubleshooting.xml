@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN"
+    "http://apache.org/forrest/dtd/document-v12.dtd">
+<document>
+    <header>
+        <title>Having Problems?</title>
+    </header>
+    <body>
+    	<section>
+    		<title>Troubleshooting</title>
+    		<p>This page details some steps you can take to try and resolve any problems you may be having with Log4Delphi. If you find you can't resolve the problem, then this page will help you collect some of the relevant information to provide in a bug report. This information will help the Log4Delphi developers understand and resolve the problem. Of course, not all the steps here will make sense for every problem you may encounter - these are just some suggestions to point you in the right direction.</p>
+    		<section>
+    			<title>Read the User Guide</title>
+    			<p> The first step to take when you have a problem with Log4Delphi is to read the <link href="userguide.html">User Guide</link> in its entirety. If you have problems with the user guide itself, you can submit a documentation bug report (see below) to help us improve the documentation.</p>
+    		</section>
+    		<section>
+    			<title>Examine Debug Output</title>
+    			<p>If you're still having a problem, the next step is to try and gather additional information about what Log4Delphi is doing. Try running Log4Delphi with debug output by setting <code>log4delphi.debug=true</code>. For information on how to set this, see the <link href="userguide.html">User Guide</link>. </p>
+    		</section>
+   			<section>
+    			<title>Has It Been Fixed?</title>
+    			<p>After examining the debug output, if you still believe that the problem you are having is caused by Log4Delphi, chances are that someone else may have already encountered this problem, and perhaps it has been fixed. The next step, therefore, may be to try a nightly build of Log4Delphi to see if the problem has been fixed. Nightly builds are available <link href="http://cvs.sourceforge.net/cvstarballs/log4delphi-cvsroot.tar.bz2">here</link>. While nightly builds are typically quite stable, these builds should nonetheless be treated as experimental.</p>
+    		</section>    		
+    	</section>
+    	<section>
+   			<title>Fixing It Yourself</title>
+    		<section>
+    			<title>Has It Been Reported?</title>
+    			<p>If the current nightly build doesn't resolve your problem, it is possible that someone else has reported the issue. It is time to look at the <link href="http://sourceforge.net/tracker/?group_id=145326&amp;atid=761568">Bug Database</link>. This system is easy to use, and it will let you search the currently open and resolved bugs to see if your problem has already been reported. If your problem has been reported, you can see whether any of the developers have commented, suggesting workarounds, or the reason for the bug, etc. Or you may have information to add (see about creating and modifying bug reports below), in which case, go right ahead and add the information.</p>
+    		</section>
+    		<section>
+    			<title>Filing a Bug Report</title>
+    			<p> By this time, you may have decided that there is an unreported bug in Log4Delphi. You have a few choices at this point. You can send an email to the user mailing list to see if others have encountered your issue and find out how they may have worked around it. If after some discussion, you feel it is time to create a <link href="http://sourceforge.net/tracker/?func=add&amp;group_id=145326&amp;atid=761568">Bug Report</link>, this is a simple operation in the bug database. Please try to provide as much information as possible in order to assist the developers in resolving the bug. Please try to enter correct values for the various inputs when creating the bug, such as which version of Log4Delphi you are running, and on which platform, etc. Once the bug is created, you can also add attachments to the bug report.</p>
+    			<p> What information should you include in your bug report? The easiest bugs to fix are those that are most easily reproducible, so it is really helpful if you can produce a small test case that exhibits the problem. If you can't produce a test case, you should try to include a snippet from your code and the relevant sections from the debug output from Log4Delphi. Try to include the header information where Ant states the version and the OS information, etc. As debug output is likely to be very large, it's best to remove any output that is not relevant. Once the bug is entered into the bug database, you will be kept informed by email about progress on the bug. If you receive email asking for further information, please try to respond, as it will aid in the resolution of the bug.</p>
+    		</section> 
+    		<section>
+    			<title>Asking for an Enhancement</title>
+    			<p> Sometimes, you may find that Log4Delphi just doesn't do what you need it to. It isn't a bug, as such, since Log4Delphi is working the way it is supposed to work. For these situations you will create a feature request <link href="http://sourceforge.net/tracker/?func=add&amp;group_id=145326&amp;atid=761571">here</link>.</p>
+    		</section>
+    		<section>
+    			<title>Fixing the Bug</title>
+    			<p> If you aren't satisfied with just filing a bug report, you can try to find the cause of the problem and provide a fix yourself. The best way to do that is by working with the latest code from <link href="cvs.html">CVS</link>. Alternatively, you can work with the source code available from the  source distributions, although working with the latest source code from CVS is highly recommended. If you are going to tackle the problem at this level, you may want to discuss some details first on the developer mailing list. Once you have a fix for the problem, you may submit the fix as a patch to either the developer mailing list, or enter the bug database as described above and attach the patch to the bug report. Using the bug database has the advantage of being able to track the progress of your patch.</p>
+    		</section>
+   		</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

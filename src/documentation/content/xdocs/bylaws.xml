@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN"
+    "http://apache.org/forrest/dtd/document-v12.dtd">
+<document>
+	<header>
+		<title>Log4Delphi Project Bylaws</title>
+	</header>
+	<body>
+    	<section>
+    		<title>What is the Log4Delphi Project?</title>
+    		<p>The Log4Delphi Project is a community governed by the principle of meritocracy that strives to meet the <link href="mission.xml">Log4Delphi Mission Statement</link>.</p>
+    	</section>
+    	<section>
+    		<title>Meritocracy</title>
+    		<p>The Log4Delphi Project operates in a fashion whereby anybody interested can easily become involved by sending patches or suggestions, participating in the mailing lists and making other contributions.</p>
+    		<p>As soon as a person has made sufficient contributions they are granted the privilege of becoming a part of the development community by being granted access to the code repository, in effect becoming a commiter. Once a committer has made a sufficient number of contributions and proven his commitment to the project, he may be nominated to become a project administrator. This principle is known as meritocracy, the govern of merrit.</p>
+    		<p>This implies that the project is governed by the people who contribute the most.</p>
+    	</section>
+    	<section>
+    		<title>Roles and Responsibilties</title>
+    		<p>The project defines a set of roles with associated rights and responsibilities. These roles govern what tasks an individual may perform within the project.</p>
+    		<p>The roles are: <link href="#user">User</link> | <link href="#developer">Developer</link> | <link href="#committer">Committer</link> | <link href="#administrator">Administrator</link></p>
+    		<section>    			
+    			<title>Users</title>
+    			<anchor id="user"/>
+    			<p>The most important participants in the project are the people who use our software. They contribute to the project by providing feedback to developers in the form of bug reports and feature requests. Users participate in the community by helping other users on mailing lists and user support forums. The passive users are also known as <em>lurkers</em>.</p>
+    		</section>
+    		<section>    			
+    			<title>Developers</title>
+    			<anchor id="developer"/>
+    			<p> All of the volunteers who are contributing time, code, documentation, or resources to the project are known as developers. A developer that makes sustained, welcome contributions to the project may be invited to become a Committer, though the exact timing of such invitations depends on many factors.</p>
+    		</section>
+    		<section>    			
+    			<title>Committers</title>
+    			<anchor id="committer"/>
+    			<p>The project's Committers are responsible for the project's technical management. All committers have write access to the project's source repositories. Committers may cast binding votes on any technical discussion regarding the project.</p>
+    			<p>Committer access is by invitation only and must be approved by lazy consensus of the active Project Administrators. A Committer is considered emeritus by their own declaration or by not contributing in any form to the project for over six months. An emeritus committer may request reinstatement of commit access from the Administrators. Such reinstatement is subject to lazy consensus of active Administrators.</p>
+    			<p>Commit access can be revoked by a unanimous vote of all the active Administrators (except the committer in question if they are also an Administrator).</p>
+    			<p>A committer who makes a sustained contribution to the project may be invited to become a Project Administrator. The form of contribution is not limited to code. It can also include code review, helping out users on the mailing lists, documentation, etc. </p>
+    		</section>
+    		<section>    			
+    			<title>Administrators</title>
+    			<anchor id="administrator"/>
+    			<p>Administrators are responsible for the management of the project. Duties include:</p>
+    			<ul>
+    			    <li>Deciding what is distributed as products of the Log4Delphi Project. In particular all releases and release dates must be approved by the Administrators.</li>
+    			    <li>Maintaining the project's shared resources, including the codebase repository, mailing lists, websites.</li>
+    			    <li>Speaking on behalf of the project.</li>
+    			    <li>Nominating new administrators and committers.</li>
+    			    <li>Maintaining these bylaws and other guidelines of the project.</li>
+    			</ul>
+    			<p>Membership to the Administrators is by invitation only and must be approved by a lazy consensus of active Administrators. An Administrator is considered "emeritus" by their own declaration or by not contributing in any form to the project for over six months. An emeritus member may request reinstatement to the Administrators. Such reinstatement is subject to lazy consensus of the active Administrators. Membership of the Administrators can be revoked by an unanimous vote of all the active Administrators other than the member in question.</p>
+    		</section>
+    	</section>
+    	<section>
+    		<title>Project Management and Collaboration</title>
+    		<p>The project is managed using a collaborative, consensus-based process.</p>
+    		<section>
+    			<title>Communication</title>
+    			<p>Communication is done via mailing lists. These identify "virtual meeting rooms" where conversations happen asynchronously, which is a general requirement for groups that are so geographically distributed to cover all time zones.</p>
+    			<p>In general, asynchronous communication is much more useful because it allows archives to be created and it's more tolerant on the volunteer nature of the community.</p>
+    		</section>
+    		<section>
+    			<title>Documentation</title>
+    			<p>Documentation is imperitive as it gives users and new comers to the project vital information. As such the project strives to create complete and high quality documentation for the products.</p>
+    			<p>All documentation is marked up using XML which is then converted to HTML and PDF formats. The documentation is also used for the project's website.</p>
+    		</section>
+    		<section>
+    			<title>Decision Making</title>
+    			<p>Within the project, different types of decisions require different forms of approval. For example, the previous section describes several decisions which require "lazy consensus" approval. This section defines how voting is performed, the types of approvals, and which types of decision require which type of approval.</p>
+    			<section>
+    				<title>Voting</title>
+    				<p>Decisions regarding the project are made by votes on the developer mailing list. Votes are clearly indicated by subject line starting with [VOTE] or [ADMIN-VOTE]. Voting is carried out by replying to the vote mail. Voting may take one of three flavours:</p>
+    				<table>
+    				    <caption>Votes</caption>
+    				    <tr>
+    				        <td><strong>+1</strong></td>
+    				        <td>A positive vote indicating "Yes," "Agree," or "the action should be performed."</td>
+    				    </tr>
+    				    <tr>
+    				        <td><strong>0</strong></td>
+    				        <td>Abstain, have no opinion. This constitutes a veto. No explanation for veto is required.</td>
+    				    </tr>
+    				    <tr>
+    				        <td><strong>-1</strong></td>
+    				        <td>A negative vote indicating "No," "Do Not Agree" or "the action should not be performed."  It may also be appropriate for a -1 vote to include an alternative course of action.</td>
+    				    </tr>
+    				</table>
+    				<p>All participants in the project are encouraged to show their agreement with or against a particular action by voting. For technical decisions, only the votes of active committers are binding. Non binding votes are still useful for those with binding votes to understand the perception of an action in the wider community. For Administrator decisions, only the votes of Administrators are binding.</p>
+    			</section>
+    			<section>
+    				<title>Approvals</title>
+    				<p>These are the types of approvals that can be sought. Different actions require different types of approvals</p>
+    				<table>
+    				    <caption>Approvals</caption>
+    				    <tr>
+    				        <td>Consensus</td>
+    				        <td>For this to pass, all voters with binding votes must vote and there can be no binding vetoes (0). Consensus votes are rarely required due to the impracticality of getting all eligible voters to cast a vote.</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Lazy Consensus</td>
+    				        <td>Lazy consensus requires at least 3 binding (+1) votes and no binding vetoes.</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Lazy Approval</td>
+    				        <td>An action with lazy approval is implicitly allowed unless a (-1) vote is received, at which time, depending on the type of action, a lazy consensus approval must be obtained.</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Majority</td>
+    				        <td>Some actions require a 2/3 majority of active committers or administrators to pass. Such actions typically affect the foundation of the project (e.g. adopting a new codebase to replace an existing product). The higher threshold is designed to ensure such changes are strongly supported. To pass this vote requires at least 2/3 of binding vote holders to vote (+1)</td>
+    				    </tr>
+    				</table>
+    			</section>
+    			<section>
+    				<title>Vetoes</title>
+    				<p>A valid, binding veto cannot be overruled.  If you disagree with a valid veto, you must lobby the person casting the veto to withdraw their veto. If a veto is withdrawn, depending on the situation, a re-vote may ensue.</p>
+    			</section>
+    			<section>
+    				<title>Actions</title>
+    				<p>This section describes the various actions which are undertaken within the project, the corresponding approval required for that action and those who have binding votes over the action.</p>
+    				<table>
+    				    <caption>Actions</caption>
+    				    <tr>
+    				    	<th>Action</th>
+    				    	<th>Description</th>
+    				    	<th>Approval</th>
+    				    	<th>Binding Votes</th>
+    				    </tr>
+    				    <tr>
+    				        <td>Code Change</td>
+    				        <td>A change made to a codebase of the project and committed by a committer. This includes source code, documentation, website content, etc.</td>
+    				        <td>Lazy Approval</td>
+    				        <td>Active committers</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Release Plan</td>
+    				        <td>Defines the timetable and actions for a release.</td>
+    				        <td>Lazy Approval</td>
+    				        <td>Active committers</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Adoption of New Codebase</td>
+    				        <td>When the codebase for an existing, released product is to be replaced with an alternative codebase. If such a vote fails to gain approval, the existing code base will continue. This also covers the creation of new sub-projects within the project.</td>
+    				        <td>Majority</td>
+    				        <td> Active committers</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Product Release</td>
+    				        <td>When a release of one of the project's products is ready, a vote is required to accept the release as an official release of the project.</td>
+    				        <td>Lazy Approval</td>
+    				        <td>Active Administrators</td>
+    				    </tr>
+    				    <tr>
+    				        <td>New Committer</td>
+    				        <td>When a new committer is nominated for the project.</td>
+    				        <td>Lazy Consensus</td>
+    				        <td>Active Administrators</td>
+    				    </tr>
+    				    <tr>
+    				        <td>New Administrator</td>
+    				        <td>When a committer is proposed for Administrator</td>
+    				        <td>Lazy Consensus</td>
+    				        <td>Active Administrators</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Committer Removal</td>
+    				        <td>When removal of commit privileges is sought.</td>
+    				        <td>Consensus</td>
+    				        <td>Active Administrators</td>
+    				    </tr>
+    				    <tr>
+    				        <td>Administrator Removal</td>
+    				        <td>When removal of an Administrator is sought.</td>
+    				        <td>Consensus</td>
+    				        <td>Active Administrators</td>
+    				    </tr>
+    				</table>
+    			</section>
+    			<section>
+    				<title>Voting Timeframes</title>
+    				<p>Votes are open for a period of 1 week to allow all active voters time to consider the vote. Votes relating to code changes are not subject to a strict timetable but should be made as timely as possible.</p>
+    			</section>
+    		</section>
+    		
+    	</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

@@ -1,0 +1,55 @@
+package log4delphi_D6_STD;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl;
+
+contains
+  TLoggerUnit in 'TLoggerUnit.pas',
+  TLoggingEventUnit in 'TLoggingEventUnit.pas',
+  TLogLogUnit in 'TLogLogUnit.pas',
+  TNullAppenderUnit in 'TNullAppenderUnit.pas',
+  TOnlyOnceErrorHandlerUnit in 'TOnlyOnceErrorHandlerUnit.pas',
+  TOptionConverterUnit in 'TOptionConverterUnit.pas',
+  TPatternLayoutUnit in 'TPatternLayoutUnit.pas',
+  TPropertyConfiguratorUnit in 'TPropertyConfiguratorUnit.pas',
+  TIniConfiguratorUnit in 'TIniConfiguratorUnit.pas',
+  TSimpleLayoutUnit in 'TSimpleLayoutUnit.pas',
+  TWriterAppenderUnit in 'TWriterAppenderUnit.pas',
+  TXMLLayoutUnit in 'TXMLLayoutUnit.pas',
+  TAppenderUnit in 'TAppenderUnit.pas',
+  TConfiguratorUnit in 'TConfiguratorUnit.pas',
+  TConsoleUnit in 'TConsoleUnit.pas' {TConsole},
+  TErrorHandlerUnit in 'TErrorHandlerUnit.pas',
+  TFileAppenderUnit in 'TFileAppenderUnit.pas',
+  THTMLLayoutUnit in 'THTMLLayoutUnit.pas',
+  TLayoutUnit in 'TLayoutUnit.pas',
+  TLevelUnit in 'TLevelUnit.pas',
+  TPrintWriterUnit in 'util\TPrintWriterUnit.pas',
+  TPropertiesUnit in 'util\TPropertiesUnit.pas',
+  TStringUnit in 'util\TStringUnit.pas';
+
+end.

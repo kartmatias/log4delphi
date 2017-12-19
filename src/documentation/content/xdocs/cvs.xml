@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+          
+<document> 
+    <header>
+        <title>Log4Delphi CVS Repository</title>
+    </header>
+    <body>
+		<section>
+			<title>About CVS</title>
+			<p>Concurrent Versions System, usually called CVS, is a tool used by many 
+				software developers to manage changes within their source code tree. 
+				CVS provides the means to store not only the current version of a piece 
+				of source code, but a record of all changes (and who made those changes) 
+				that have occurred to that source code. Use of CVS is particularly common
+				on projects with multiple developers, since CVS ensures changes made by 
+				one developer are not accidentally overwritten when another developer 
+				posts their changes to the source tree.</p>
+		</section>		
+		<section>
+			<title>Browsing The CVS Repository</title>
+			<p>The Log4Delphi CVS Repository may be browsed using a web browser at:
+				<!--<link href="http://cvs.sourceforge.net/viewcvs.py/log4delphi">
+					http://cvs.sourceforge.net/viewcvs.py/log4delphi</link>. -->
+				<link href="http://log4delphi.cvs.sourceforge.net/log4delphi">
+					http://log4delphi.cvs.sourceforge.net/log4delphi</link>.
+				You cannot check out or view the contents of any file in the repository,
+				in order to do so you will have to use anonymous checkout.</p>
+		</section>
+		<section>
+			<title>Anonymous CVS Checkout</title>
+			<p>The CVS repository may be checked out using anonymous pserver CVS using
+				the following instructions. The module you wish to check out is specified
+				as <em>modulename</em> and the username to uses is <em>anonymous</em>.
+				When prompted for a password simply press the enter key. Windows users
+				should use a CVS client like Tortiose CVS.</p>
+			<!-- <p><code>cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/log4delphi login 
+				</code></p> -->
+            <p><code> cvs -d:pserver:anonymous@log4delphi.cvs.sourceforge.net:/cvsroot/log4delphi login 
+				</code></p>                
+			<!-- <p><code>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/log4delphi co -P </code>
+				<em>modulename</em></p> -->
+			<p><code> cvs -z3 -d:pserver:anonymous@log4delphi.cvs.sourceforge.net:/cvsroot/log4delphi co -P </code>
+				<em>modulename</em></p>
+			<note>The path to the cvsroot is case sensitive and should be all lowercase: 
+				<code>/cvsroot/log4delphi</code></note>
+		</section>
+		<section>
+			<title>Developer CVS Commit</title>
+			<p>Developers will need to access the repository using CVS over SSH. This 
+				requires that Tortoise CVS be set up to use Putty. For more information
+				please look <link href="http://www.sourceforge.net/cvs/?group_id=145326">
+					here</link>.</p>
+		</section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>

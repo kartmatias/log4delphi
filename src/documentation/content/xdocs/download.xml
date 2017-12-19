@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+   Copyright 2005-2006 Log4Delphi Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+  -->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" 
+          "http://apache.org/forrest/dtd/document-v12.dtd">
+          
+<document> 
+    <header>
+        <title>Download Releases of Log4Delphi</title>
+    </header>
+    <body>
+        <section>
+            <title>Official Log4Delphi Releases</title>
+            <p>Official Source and Binary Packages can be found 
+				<link href="https://sourceforge.net/project/showfiles.php?group_id=145326">
+					here</link>.</p>            
+        </section>
+        <section>
+        	<title>Verifying the Archive Integrity</title>
+        	<p>Each archive in the file release section has an accompanying MD5 
+        	file which has the same name of the archive it verifies with the 
+        	<code>.MD5</code> extension. The MD5 file is a checksum of the 
+        	archive generated at the same time that the archive is created, 
+        	both files are then uploaded securely to the server. The MD5 file 
+        	should be used to ensure the archive's integrity.</p>
+        	<section>
+        		<title>Windows</title>
+        		<p>To verify the integrity of an archive using an MD5 checksum on
+        		Windows requires a utility to do so. A free command line utlity
+        		is available from: <link href="http://www.fourmilab.ch/md5/">
+        		   http://www.fourmilab.ch/md5/</link>. Download the utility
+        		   from this page, extract the archive to the location of your 
+        		   choice and include the <code>md5.exe</code> file in your PATH 
+				   variable.
+        		</p>
+        		<p> You can verify the contents of an archive by running the
+        		utility in the command line and passing it the archive as a command
+				line parameter, it will	print the MD5 sum which you can check against 
+				the MD5 checksum given in the MD5 file. As an example the utility was 
+				run on a binary distribution and the MD5 file's contents printed to the
+        		screen using the <code>more</code> command. The checksums are
+        		identical.
+        		</p>
+        		<source>
+F:\Development\log4delphi\dist\0.1>md5 log4delphi-0.1-bin.tar.gz
+D82AF52C3B33A1A90A4626A48914ACC5  log4delphi-0.1-bin.tar.gz
+
+F:\Development\log4delphi\dist\0.1>more log4delphi-0.1-bin.tar.gz.MD5
+d82af52c3b33a1a90a4626a48914acc6       		
+        		</source>
+        	</section>
+        	<section>
+        		<title>Linux</title>
+        		<p>Many linux distributions include the <code>md5</code> command 
+        		line utility that can be used to verify the archive against the 
+        		MD5 checksum. The md5 utility is part of the Open SSL package
+				which needs to be installed on your machine.</p>
+				<p>You can verify the contents of an archive by running the utility
+					in the command line and passing the archive as a command line 
+					parameter, it will print the md5 sum which you can check against
+					the MD5 checksum given in the MD5 file. As an example, the utility
+					was run on a binary distribution and the MD5 file's contents printed 
+					using the <code>cat</code> command. The checksums are identical.</p>
+        		<source>
+[trevor@woodstock 0.1]$ cat log4delphi-0.1-bin.tar.gz.MD5
+d82af52c3b33a1a90a4626a48914acc6
+[trevor@woodstock 0.1]$ openssl md5 log4delphi-0.1-bin.tar.gz
+MD5(log4delphi-0.1-bin.tar.gz)= d82af52c3b33a1a90a4626a48914acc5
+        		</source>
+        	</section>        	
+        </section>
+    </body>
+    <footer>
+    	<legal>Copyright 2005-2006 Log4Delphi Project. All Rights Reserved.</legal>
+    </footer>
+</document>
